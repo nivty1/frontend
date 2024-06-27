@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Code Playground</h1>
+    <div class="code-editor">
+      <div class="left-panel">
+        <div class="language-selector">
+          <label for="language">Choose Language:</label>
+          <select id="language">
+            <option value="">Select Language</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="cpp">C++</option>
+          </select>
+        </div>
+        <div class="timer">
+          <h2>Stopwatch:</h2>
+          <span id="stopwatch">00:00:00</span>
+        </div>
+      </div>
+      <textarea id="code" rows="15" placeholder="Write your code here"></textarea>
+    </div>
+    <div class="test-cases">
+      <h2>Test Cases (Mandatory):</h2>
+      <textarea id="test-cases" rows="5" placeholder="Enter your test cases here, one per line" required></textarea>
+    </div>
+    <div class="button-container">
+      <button id="clear-code">Clear Code</button>
+      <button id="run">Run Code</button>
+    </div>
+    <div class="output">
+      <h2>Simulated Output:</h2>
+      <pre id="output-text"></pre>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
